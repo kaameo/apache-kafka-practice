@@ -38,7 +38,7 @@ public class ProducerDemoKeys {
 
                 // create a Producer Record
                 ProducerRecord<String, String> producerRecord =
-                        new ProducerRecord<>("topic", key, value);
+                        new ProducerRecord<>(topic, key, value);
 
                 // send data
                 producer.send(producerRecord, new Callback() {
